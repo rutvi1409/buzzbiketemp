@@ -1,0 +1,2397 @@
+@font-face {
+  font-family: "Cindie 2 I";
+  src: url(./fonts/Cindie2-I.ttf);
+}
+@font-face {
+  font-family: "SFUIText-Regular";
+  src: url(./fonts/SFUIText-Regular.ttf);
+}
+@font-face {
+  font-family: "GT Pressura Regular";
+  src: url(./fonts/GT\ Pressura\ Regular.ttf);
+}
+@font-face {
+  font-family: "GT Pressura Pro Regular";
+  src: url(./fonts/GT\ Pressura\ Pro\ Regular.ttf);
+}
+@font-face {
+  font-family: "NeufileGrotesk";
+  src: url(./fonts/NeufileGrotesk-Medium.ttf);
+}
+
+/* .navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  width: 100%;
+  height: 98px;
+  background: none;
+}
+
+
+.logo {
+  width: 208px;
+  height: 32px;
+}
+
+.nav-link {
+  color: white;
+  font-family: "SFUIText-Regular";
+}
+
+.nav-btns > .learn-more-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  margin-left: 5px;
+}
+.nav-btns > .join-now-btn {
+  margin-left: 5px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-li {
+  color: white;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 98px;
+  width: 100%;
+  background: none;
+  z-index: 99;
+  /* padding: 20px 100px;  */
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  overflow: hidden;
+  transition: all 0.5s;
+  z-index: 9999 !important;
+}
+
+.logo {
+  width: 208px;
+  height: 32px;
+  /* margin-left: 100px; */
+  margin: 35px;
+  /* line-height: 80px; */
+}
+
+nav ul {
+  /* float: right; */
+  margin-right: 40px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+nav li {
+  /* display: flex; */
+  margin: 0px 20px;
+  line-height: 80px;
+}
+li > a {
+  /* color: white; */
+  font-size: 14px;
+  font-family: "SFUIText-Regular";
+}
+
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  margin-right: 40px;
+  /* float: right; */
+  cursor: pointer;
+  display: none;
+}
+
+.learn-more-nav-btn {
+  width: 152px;
+  height: 41px;
+  border: none;
+  background: white;
+  border-radius: 25px;
+  color: #ff4074;
+  font-size: 14px;
+  border: 1px solid black;
+  font-family: "GT Pressura Regular";
+  line-height: 17px;
+}
+
+.join-now-nav-btn {
+  width: 152px;
+  height: 41px;
+  border: none;
+  background: #ff4074;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  margin-left: 15px;
+  font-family: "GT Pressura Regular";
+  line-height: 17px;
+}
+
+.header-main {
+  overflow: visible;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-bg {
+  background: url(./images/home-bg.png);
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* overflow: visible !important; */
+}
+.img-pink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* bottom: -25%; */
+  opacity: 0.5;
+}
+
+.pink-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.bottom-vector-img {
+  position: absolute;
+  bottom: -8%;
+  left: 0;
+  width: 100%;
+}
+.img-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.five-star-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 15%;
+}
+.caption {
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 75%;
+}
+.header-text1 {
+  /* position: absolute; */
+  font-size: 144px;
+  /* top: 35%; */
+  font-family: "Cindie 2 I";
+  /* left: 20%; */
+  letter-spacing: 25px;
+  /* line-height: 200px; */
+
+  /* width: 896px;
+  height: 144px; */
+  font-weight: 500;
+  color: white;
+  text-align: left;
+}
+.header-text2 {
+  /* position: absolute; */
+  font-size: 144px;
+  /* top: 55%; */
+  font-family: "Cindie 2 I";
+  /* left: 32%; */
+  letter-spacing: 25px;
+
+  /* width: 896px;
+  height: 144px; */
+  font-weight: 500;
+  color: white;
+  text-align: right;
+}
+
+.home-content {
+  /* position: absolute; */
+  /* top: 73%; */
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+
+.home-btns {
+  /* position: absolute; */
+  /* left: 38%;
+  top: 85%; */
+  margin-top: 30px;
+}
+.learn-more-btn {
+  width: 152px;
+  height: 41px;
+  border: none;
+  background: white;
+  border-radius: 25px;
+  color: FF4074;
+  font-size: 14px;
+  border: 1px solid black;
+  font-family: "GT Pressura Regular";
+}
+.join-now-btn {
+  width: 152px;
+  height: 41px;
+  border: none;
+  background: #ff4074;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  margin-left: 25px;
+  font-family: "GT Pressura Regular";
+}
+
+/* cycle-club-section */
+
+.cycle-club-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycle-club-header {
+  color: #ff4074;
+  line-height: 65px;
+  font-size: 50px;
+  font-family: "Cindie 2 I";
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.cycle-club-baseline {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 126.48%;
+  color: #13514e !important;
+}
+
+/* Card section */
+.rect-card {
+  box-shadow: -1px 36px 52px rgba(19, 81, 78, 0.15);
+  border-radius: 6px;
+  height: 400px;
+  margin-top: 15px;
+}
+.card-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.card-style {
+  width: 230px;
+  height: 421px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -1px 36px 52px rgba(19, 81, 78, 0.15);
+  border-radius: 6px;
+  border: none !important;
+}
+
+.card-img-top {
+  width: 80px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-body {
+  padding-top: 0 !important;
+}
+
+.card-title {
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #ff4074;
+}
+
+.card-text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 134.98%;
+  text-align: center;
+  color: #13514e;
+  padding: 0px 33px 65px 28px;
+}
+.card-row {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* image section  */
+
+.img-gallery {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* background: #ff4074; */
+  position: relative;
+  height: 150vh;
+  width: 100%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-gallery-overlay {
+  /* background-color: blue; */
+  z-index: 9998;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-overlay-header {
+  font-size: 130px;
+  font-family: "Cindie 2 I";
+  color: white;
+  text-align: center;
+  line-height: 110px;
+  letter-spacing: 0.04em;
+}
+.img-overlay-content {
+  width: 565px;
+  font-size: 20px;
+  font-family: "NeufileGrotesk";
+  text-align: center;
+  color: white;
+}
+
+.img-gallery-div {
+  position: relative;
+  /* background: yellow; */
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 150vh;
+  width: 100%;
+  margin-top: 90px;
+}
+.girls2-div {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  top: 0;
+}
+.girls2 {
+  width: 100%;
+  height: auto;
+}
+.cycle-boy-div {
+  position: absolute;
+  width: 70%;
+  top: 200px;
+}
+
+.cycle-boy {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.5);
+}
+.boy1-div {
+  position: absolute;
+  left: 55%;
+  top: 32%;
+  z-index: 9;
+  width: 40%;
+}
+
+.boy1 {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.8);
+}
+.cycle-girl-div {
+  z-index: 9991;
+  position: absolute;
+  top: 83%;
+  left: 17%;
+  width: 25%;
+}
+
+.cycle-girl {
+  width: 100%;
+  height: auto;
+}
+
+.sec-membership {
+  margin-top: 150px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.member-main-content {
+  position: relative;
+  margin-top: 300px;
+  background-color: #13514e;
+  height: 1000px;
+}
+
+.member-card-row {
+  position: absolute;
+  top: -30%;
+  width: 100% !important;
+  padding: 0px 100px;
+  margin: 0% !important;
+}
+
+.membership-card {
+  background: #ffffff;
+  box-shadow: 0px 12px 24px rgba(19, 81, 78, 0.2);
+  border-radius: 4px;
+  padding: 75px 25px 75px 25px;
+  margin-top: 67px;
+}
+
+.membership-card-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 114.98%;
+  /* or 23px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ff4074;
+}
+
+.card-price {
+  font-size: 60px;
+  color: #13514e;
+  font-weight: bold;
+  line-height: 65px;
+}
+
+.card-dis {
+  font-size: 17px;
+  line-height: 23px;
+  color: #13514e;
+  /* padding-left: 80px;
+  padding-right: 80px; */
+}
+
+.member-card-btn {
+  margin: 0px !important;
+}
+
+.member-main-content-base {
+  position: absolute;
+  bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 50vh; */
+}
+
+.member-content-header {
+  font-size: 70px !important;
+  color: white;
+  line-height: 70px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-family: "GT Pressura Pro Regular";
+  text-align: center;
+  display: block;
+  padding-bottom: 30px;
+}
+
+.guardian-img {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.col-lg-6,
+.col-12 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.col-section {
+  margin: 0 !important;
+}
+.col-section2 {
+  margin-top: 150px;
+}
+.col-section3 {
+  margin-top: 150px;
+}
+.col-img-1 {
+  margin-top: -120px;
+  border-radius: 8px;
+  margin-left: 120px;
+  width: 82%;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+  position: relative;
+}
+.col-img2 {
+  /* margin-top: 20px; */
+  border-radius: 8px;
+  margin-right: 0px !important;
+  width: 82%;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+}
+.col-img3 {
+  margin-top: 20px;
+  border-radius: 8px;
+  margin-left: 100px;
+  width: 82%;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+}
+
+.row1-text {
+  /* text-align: center; */
+
+  font-family: GT Pressura Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 126.48%;
+  font-family: "GT Pressura Pro Regular";
+  color: #13514e;
+  padding: 30% 20% 30% 20%;
+}
+
+.row {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.row1-pinktext {
+  color: #ff4074 !important;
+}
+
+.discovermore {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 16px;
+}
+
+.row2-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.col1-imgoverlay {
+  background-color: white;
+  height: 230px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+  z-index: 1;
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.col2-imgoverlay {
+  background-color: white;
+  height: 250px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+  z-index: 1;
+  position: absolute;
+  bottom: 5%;
+  right: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.col3-imgoverlay {
+  background-color: white;
+  height: 325px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 4px 16px 30px rgba(19, 81, 78, 0.1);
+  z-index: 1;
+  position: absolute;
+  bottom: 5%;
+  left: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 40px;
+}
+.col3-data {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid #ebebeb;
+}
+
+.last-data {
+  border: none !important;
+}
+.row1-oval {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  /* left: 50%; */
+}
+.row2-oval {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  /* left: 50%; */
+  width: 75px;
+  height: 75px;
+  background: url("./images/col-sm-img2.png");
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.oval-exclamation {
+  color: white;
+  z-index: 99;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 26px;
+  border-radius: 50%;
+  background-color: #13514e;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.torch-div {
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
+
+.col1-text {
+  color: #13514e;
+  padding-left: 15px;
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  width: 60%;
+}
+.col2-text {
+  color: #13514e;
+  padding-left: 15px;
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.col2-bottomtext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.coin-num {
+  font-family: "NeufileGrotesk";
+  color: #ff4074;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.pinkbox-outerdiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.buzzcoin {
+  font-family: "NeufileGrotesk";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 24px;
+  color: #ff4074;
+}
+.pink-box {
+  width: 90%;
+  background-color: #ff4074;
+  border-radius: 5px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.inner-pink-box {
+  width: 60%;
+  background-color: #ffa2bb;
+  height: 12px;
+  z-index: 999;
+}
+.green-box {
+  width: 90%;
+  background-color: #13514e;
+  border-radius: 8px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.header-name {
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 25px;
+  color: #13514e;
+}
+
+.inner-green-box {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.18);
+  height: 12px;
+  z-index: 999;
+}
+
+.data-num {
+  /* font-family: Maison Neue; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 26px;
+  text-align: right;
+  color: #13514e;
+}
+.data-name,
+.data-km {
+  color: #13514e;
+  letter-spacing: -0.09px;
+}
+
+.down-arrow {
+  color: #13514e;
+  margin-left: 20px;
+}
+
+.header-all {
+  color: #ff4074;
+  font-size: 20px;
+}
+.mobile-boy-img {
+  padding-left: 100px;
+  padding-right: 100px;
+  /* position: relative; */
+  margin-top: -35%;
+  width: 100%;
+  height: auto;
+}
+
+.boy-with-phone {
+  width: 100%;
+  height: 1000px;
+  background: #ff4074;
+  position: relative;
+  margin-top: 900px;
+}
+.pink-bottom-vector {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.pink-vector {
+  width: 100%;
+}
+.iphoneX {
+  position: absolute;
+  margin-top: -48%;
+  left: 50%;
+  height: 1100px;
+  width: 700px;
+}
+
+.mobileboy-overlay {
+  position: absolute;
+  margin-top: -462px;
+  left: 10%;
+}
+.mobile-overlay-text {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "GT Pressura Pro Regular";
+  width: 545px;
+  height: 134px;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 155.48%;
+}
+
+.mobile-overlay-btn {
+  margin-left: 0 !important;
+  margin-top: 85px;
+  height: 35px;
+  width: 180px;
+  font-size: 14px !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px 15px 25px !important;
+}
+
+.pink-row {
+  margin-top: 150px;
+}
+
+.pink-col-left {
+  padding-left: 300px;
+  padding-top: 100px;
+}
+
+.col-left-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 90.48%;
+  /* or 81px */
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.col-left-content {
+  font-size: 20px;
+  line-height: 25px;
+  color: #13514e;
+  padding-right: 250px;
+}
+
+.col-left-btn {
+  margin-left: 0px !important;
+  color: white;
+  background-color: #13514e;
+  margin-top: 30px !important;
+}
+.pink-col-right {
+  padding-top: 50px;
+}
+
+.main-white-box {
+  position: absolute;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.2; */
+  /* background-color: red; */
+  z-index: 0;
+}
+.sec-below-pink {
+  position: relative;
+  background-image: url(./images/main-white-box.png);
+}
+.sec-img-bg {
+  position: relative;
+  margin-top: -265px;
+  height: 1200px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chart-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff4074;
+}
+.chart-content {
+  font-family: "NeufileGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #13514e;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+.cart-table-maindiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.table-1 {
+  width: 442px;
+  margin-top: 97px;
+}
+.table-data {
+  border-bottom: 0.6px solid rgba(19, 81, 78, 0.1);
+  padding: 20px;
+  font-family: "NeufileGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 126.48%;
+  /* or 22px */
+
+  color: #13514e;
+}
+
+.no-border {
+  border: none !important;
+}
+.table-2 {
+  width: 172px;
+  height: 493px;
+  background: #ffffff;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right: 32px;
+  margin-top: 33px;
+}
+
+.table2-price {
+  border-bottom: 0.6px solid rgba(19, 81, 78, 0.1);
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 115%;
+  /* or 30px */
+
+  text-align: center;
+  padding: 15px;
+  color: #13514e;
+}
+.table2-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 114.98%;
+  /* or 23px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ff4074;
+}
+.table-3 {
+  width: 247px;
+  height: 564px;
+  background-color: #13514e;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+}
+.table3-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 114.98%;
+  /* or 23px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ff4074;
+}
+
+.table3-price {
+  border-bottom: 0.6px solid rgba(255, 255, 255, 0.5);
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 115%;
+  /* or 30px */
+
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+.footer-img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  border: rgba(0, 0, 0, 0.34);
+  border-radius: 5px;
+}
+
+.footer-img-content {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 999; */
+}
+
+.footer-img-content {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.footer-content-header {
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 114.98%;
+  text-align: center;
+  letter-spacing: 0.12em;
+}
+.three-img-div {
+  width: 700px;
+}
+.main-content {
+  width: 732px;
+  height: 58px;
+  font-family: "NeufileGrotesk";
+  font-size: 22px;
+  line-height: 129.48%;
+  text-align: center;
+}
+
+.footer-container {
+  width: 90%;
+  height: 600px;
+  background-image: url(./images/new-footer-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-top: -550px; */
+  z-index: 999;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+}
+.white-bg {
+  background-color: #f9f9f9;
+  /* background-color: pink; */
+  height: 1900px;
+}
+
+.footer-img-new {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  margin-top: -300px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-img-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #ff4074;
+  color: white;
+  overflow: visible;
+}
+.row-of-footer {
+  padding-top: 250px;
+  padding-bottom: 150px;
+  padding-left: 120px !important;
+  padding-right: 120px !important;
+}
+.footer-input {
+  background: white;
+  /* padding-right: 120px !important; */
+  border-radius: 44px;
+  width: 424px;
+  height: 60px;
+}
+.footer-div-li {
+  height: 100%;
+  width: 100%;
+}
+.Email {
+  font-family: "NeufileGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.0232px;
+  line-height: 134.98%;
+  /* or 23px */
+  padding-left: 5%;
+  color: rgba(19, 81, 78, 0.28);
+}
+
+.footer-oval {
+  width: 34px;
+  height: 34px;
+  background-color: #13514e;
+  border-radius: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row-bottom {
+  padding-bottom: 100px;
+  padding-left: 120px !important;
+}
+
+.bottom-content {
+  padding-right: 420px !important;
+}
+.twocol-inone {
+  padding-right: 150px;
+}
+
+.footer-cycle {
+  margin-top: 200px;
+  /* margin-bottom: -80px; */
+  margin-bottom: 50px;
+}
+.cycle-row {
+  height: 650px;
+}
+.cycle-header {
+  font-family: "Cindie 2 I";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 102.98%;
+  /* or 93px */
+  color: #13514e;
+}
+
+.cycle-content {
+  font-family: "NeufileGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 134.98%;
+  /* or 30px */
+  color: #13514e;
+  margin-top: 50px;
+}
+
+.cycle-btn {
+  margin-top: 50px !important;
+}
+
+.footer-cycle-img {
+  background: url("./images/footer-cycle.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  /* transform: rotate(1.31deg); */
+  /* height: 400px; */
+}
+
+.cycle-leftcol {
+  /* padding-top: 150px; */
+  padding-bottom: 150px;
+  padding-left: 200px !important;
+}
+
+.slider-card-header {
+  font-family: "GT Pressura Pro Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 134.98%;
+  /* or 61px */
+  padding-left: 650px;
+  padding-right: 650px;
+  text-align: center;
+  text-align: center;
+  color: #13514e;
+  padding-top: 70px;
+  /* padding-bottom: 70px; */
+}
+
+@media only screen and (max-width: 1400px) {
+  .row-of-footer {
+    padding-top: 200px;
+    padding-bottom: 70px;
+    padding-left: 20px !important;
+    padding-right: 30px !important;
+  }
+  .row-bottom {
+    padding-bottom: 100px;
+    padding-left: 20px !important;
+  }
+
+  .bottom-content {
+    padding-right: 30px !important;
+  }
+  .footer-input {
+    width: 300px;
+    height: 42px;
+  }
+  .stay-con-content {
+    padding-right: 0px !important;
+  }
+  .stay-connected {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .row-bottom {
+    font-family: "NeufileGrotesk";
+    font-size: 12px;
+    line-height: 126.98%;
+    padding-left: 20px;
+  }
+  .row-bottom-of-bottom {
+    margin-top: 30px;
+  }
+
+  .col-lg-2,
+  .col-lg-4,
+  .col-md-4 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .twocol-inone {
+    padding-right: 73px;
+  }
+  .contact-us {
+    margin-top: 30px;
+  }
+}
+
+.bycycle-slider .slider {
+  /* width: 50%; */
+  width: 100%;
+  /* background: green; */
+  margin: 200px auto;
+}
+.bycycle-slider .slick-cloned {
+  width: 50%;
+}
+.bycycle-slider .slick-slide {
+  margin: 0px 20px;
+}
+
+.bycycle-slider .slick-slide img {
+  width: 90%;
+}
+
+.bycycle-slider .slick-prev:before,
+.bycycle-slider .slick-next:before {
+  color: black;
+}
+
+.bycycle-slider .slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.bycycle-slider .slick-dots .slick-active {
+  background-color: rgb(241, 115, 136);
+}
+.slider-card .slick-dots {
+  display: none !important;
+}
+.bycycle-slider .slick-current {
+  opacity: 1;
+}
+.bycycle-slider .cycle-img {
+  display: flex !important;
+  justify-content: center !important;
+  /* width: 100px !important; */
+  /* height: 100px; */
+}
+.bycycle-slider .slick-dots li button:before {
+  color: rgba(0, 0, 0, 0) !important;
+  /* width: 80px;
+  height: 5px; */
+  font-size: 0px;
+}
+
+.bycycle-slider .slick-dots li {
+  width: 80px !important;
+  height: 3px !important;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.bycycle-slider .slick-dots {
+  list-style: none !important;
+}
+
+.slider-card {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.pink-zig-zag {
+  position: absolute;
+  z-index: 99;
+  margin-top: -900px;
+}
+
+.menu-div {
+  position: absolute;
+  top: 43%;
+  left: 97%;
+}
+
+.cycle-slider-header {
+  margin-top: 160px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .slider-card-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .cycle-club-header {
+    line-height: 55px;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+
+  .cycle-club-baseline {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.48%;
+  }
+
+  .card-style {
+    width: 180px;
+    height: 350px;
+  }
+  .card-img-top {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-title {
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .iphoneX {
+    left: 30%;
+  }
+
+  .btn-for-col {
+    display: block !important;
+    margin-top: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .girls2-div {
+    display: none;
+  }
+
+  .cycle-girl-div {
+    display: none;
+  }
+  .cycle-boy-div {
+    width: 90%;
+    top: 100px;
+  }
+  .boy1-div {
+    top: 45%;
+    width: 76%;
+
+    left: 20%;
+  }
+
+  .img-gallery-div {
+    height: 120vh;
+  }
+  .member-content-header {
+    font-size: 45px !important;
+    line-height: 48px !important;
+  }
+  .guardian-img {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .bbc-img,
+  .wired-img {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .iphoneX {
+    height: 603px;
+    width: 482px;
+  }
+
+  .img-overlay-header {
+    font-size: 110px;
+    line-height: 90px;
+    letter-spacing: 0.04em;
+  }
+  .img-overlay-content {
+    width: 500px;
+    font-size: 18px;
+  }
+  .img-gallery-btn {
+    display: none;
+  }
+
+  .iphoneX {
+    height: 784px;
+    width: 609px;
+  }
+  .cycle-club-header {
+    line-height: 55px;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+  .rect-card {
+    height: 100%;
+  }
+  .cycle-club-baseline {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.48%;
+    text-align: center;
+  }
+  .card-style {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+  }
+  .card-img-top {
+    width: 25px;
+    height: auto;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .card-title {
+    font-size: 16px;
+    line-height: 13px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+  .card-img {
+    width: 25px;
+    height: auto;
+  }
+
+  .member-main-content {
+    height: 1700px;
+  }
+
+  .header-text1,
+  .header-text2 {
+    font-size: 100px;
+  }
+
+  .nav-btns > .learn-more-btn,
+  .nav-btns > .join-now-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
+  }
+  .bottom-vector {
+    bottom: -3%;
+  }
+
+  nav {
+    height: 75px;
+    width: 100%;
+  }
+
+  nav > .logo {
+    width: 130px;
+    height: 28px;
+    margin: 25px;
+    line-height: 50px;
+  }
+  nav > ul {
+    margin-right: 20px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .img-overlay-header {
+    font-size: 90px;
+    line-height: 75px;
+    letter-spacing: 0.04em;
+  }
+  .img-overlay-content {
+    width: 450px;
+    font-size: 16px;
+  }
+  .img-gallery {
+    height: 80vh;
+    margin-top: 0px;
+  }
+
+  .mobileboy-overlay {
+    margin-top: -515px;
+  }
+
+  .mobile-overlay-text {
+    font-family: "GT Pressura Pro Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 117.98%;
+    /* or 35px */
+
+    color: #13514e;
+    padding-right: 40%;
+  }
+  .pink-col-left {
+    padding-left: 30px;
+  }
+  .col-left-header {
+    font-size: 50px;
+  }
+  .chart-content {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+  .table-1 {
+    width: 338px;
+  }
+  .table-data {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .table-2 {
+    width: 135px;
+  }
+  .table2-header {
+    font-size: 15px;
+  }
+  .table2-price {
+    font-size: 15px;
+  }
+  .table-3 {
+    width: 170px;
+  }
+  .table3-header {
+    font-size: 25px;
+  }
+  .table3-price {
+    font-size: 15px;
+  }
+
+  .footer-img-sec {
+    padding-left: 20px !important ;
+    padding-right: 20px !important;
+    height: 560px;
+  }
+
+  .boy1-div {
+    top: 58%;
+    width: 70%;
+    /* right: 0% !important; */
+    left: 30%;
+  }
+  .img-gallery-div {
+    height: 70vh;
+    margin-top: 10px;
+  }
+  .member-card-row {
+    /* top: -23%; */
+    width: 100% !important;
+    padding: 0% 0%;
+    margin: 0% !important;
+  }
+
+  .membership-card-header {
+    font-size: 18px;
+  }
+
+  .card-price {
+    font-size: 50px;
+  }
+
+  .cycle-club-header {
+    line-height: 30px;
+    font-size: 30px;
+    /* letter-spacing: 0.05em; */
+    /* font-weight: 400; */
+  }
+
+  .cycle-club-baseline {
+    /* font-weight: 400; */
+    font-size: 16px;
+    /* line-height: 126.48%; */
+  }
+  .card-style {
+    /* width: 120px; */
+    height: auto;
+  }
+
+  .header-text1,
+  .header-text2 {
+    font-size: 60px;
+    letter-spacing: 0.25em;
+  }
+  .home-content {
+    font-size: 20px;
+  }
+
+  .nav-btns > .learn-more-btn,
+  .nav-btns > .join-now-btn {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .bottom-vector-img {
+    bottom: 0;
+  }
+  .div-for-nav-btns {
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav #icon {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 17px;
+    font-weight: 100;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav > .logo {
+    width: 110px;
+    height: 19px;
+    margin: 18px;
+    line-height: 40px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: yellow; */
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    align-items: flex-start;
+  }
+
+  nav ul li > .active {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  nav ul li a {
+    font-weight: bold;
+    font-size: 35px;
+    color: #13514e;
+  }
+
+  .learn-more-nav-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    padding: 7px 7px;
+    /* margin: 10px; */
+    line-height: 10px;
+    /* margin-left: 12px; */
+    /* margin-right: 12px; */
+  }
+  .join-now-nav-btn {
+    border: none;
+    background: white;
+    color: #13514e;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    padding: 7px 7px;
+    margin-left: 0px;
+    margin-top: 10px;
+    line-height: 10px;
+    /* margin-left: 12px;
+    margin-right: 12px; */
+  }
+
+  .div-for-nav-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    display: block;
+  }
+  nav.show {
+    left: 0;
+    height: 100vh;
+    background-color: #ff4074;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li.show {
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-row {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  .rect-card {
+    height: 390px;
+  }
+  .col1-imgoverlay {
+    height: 170px;
+    width: 180px;
+    right: 17%;
+  }
+  .col2-imgoverlay {
+    height: 155px;
+    width: 195px;
+    left: 23%;
+  }
+
+  .col1-text {
+    padding-left: 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .col2-text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .torch-div {
+    margin-left: 5px;
+  }
+
+  .pink-box {
+    height: 30px;
+  }
+  .inner-pink-box {
+    height: 6px;
+  }
+
+  .green-box {
+    height: 30px;
+  }
+  .inner-green-box {
+    height: 6px;
+  }
+  .oval-exclamation {
+    height: 30px;
+    width: 30px;
+  }
+
+  .row1-oval {
+    margin-top: -15px;
+  }
+  .row2-oval {
+    margin-top: -20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .coin-num {
+    font-size: 15px;
+  }
+
+  .col3-imgoverlay {
+    width: 200px;
+    height: 180px;
+    padding: 15px;
+    bottom: 5%;
+    left: 22%;
+  }
+
+  .col3-data {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .data-name {
+    font-size: 10px;
+  }
+
+  .data-num {
+    font-size: 7px;
+  }
+  .data-km {
+    font-size: 7px;
+  }
+
+  .header-all {
+    font-size: 10px;
+  }
+
+  .header-name {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .down-arrow {
+    margin-left: 5px;
+  }
+
+  .data-img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .iphoneX {
+    height: 500px;
+    width: 300px;
+    /* left: 30%; */
+  }
+
+  .table-1 {
+    width: 220px;
+  }
+  .table-2 {
+    width: 95px;
+  }
+  .table-3 {
+    width: 125px;
+  }
+
+  .main-content {
+    width: 237px;
+    height: 44px;
+
+    font-family: "NeufileGrotesk";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 134.98%;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .btn-footer {
+    margin-top: 130px !important;
+  }
+
+  .footer-container {
+    height: 750px;
+  }
+
+  .five-star {
+    display: none;
+  }
+  .header-text1,
+  .header-text2 {
+    font-size: 45px;
+    letter-spacing: 0.1em;
+  }
+
+  .home-content {
+    font-size: 16px;
+  }
+
+  .learn-more-btn,
+  .join-now-btn {
+    font-size: 10px;
+  }
+
+  .nav-btns > .learn-more-btn,
+  .nav-btns > .join-now-btn {
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .collapse {
+    z-index: 99;
+  }
+  .navbar-collapse {
+    /* position: absolute; */
+    background-color: #ff4074;
+    width: 377px;
+    height: 701px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar-collapse > .navbar-nav > ul {
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .member-main-content {
+    margin-top: 230px;
+  }
+  .member-card-row {
+    top: -13.5%;
+  }
+  .card-price {
+    font-size: 50px;
+  }
+  .row1-text {
+    font-size: 25px;
+    padding: 20% 7% 25% 7%;
+  }
+  .col-img-1 {
+    margin-left: 20px;
+  }
+  .col-img3 {
+    margin-left: 0px;
+  }
+  .col-section2 {
+    margin-top: 10px;
+  }
+  .col-section3 {
+    margin-top: 10px;
+    margin-left: 0px !important;
+  }
+  .row2-img {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .mobileboy-overlay {
+    left: 5%;
+  }
+  .three-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .honest-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .img-overlay-header {
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+  }
+  .img-overlay-content {
+    width: 230px;
+    font-size: 14px;
+  }
+  .img-gallery {
+    height: 80vh;
+    margin-top: 0px;
+  }
+  .pink-col-left {
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-top: 170px;
+  }
+  .col-left-header {
+    font-size: 50px;
+  }
+  .col-left-content {
+    padding-right: 50px;
+    font-size: 16px;
+  }
+  .mobile-overlay-text {
+    width: 305px;
+    height: 191px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .cycle-boy-div {
+    width: 85%;
+  }
+
+  .cycle-boy {
+    height: 350px;
+  }
+  .boy1-div {
+    left: 30%;
+  }
+
+  .boy1 {
+    height: 300px;
+  }
+  .member-content-header {
+    font-size: 30px !important;
+    line-height: 28px !important;
+  }
+  .member-main-content-base {
+    bottom: 11%;
+  }
+
+  .quotes {
+    font-size: 30px !important;
+  }
+
+  .col2-imgoverlay {
+    height: 105px;
+    width: 165px;
+  }
+  .col3-data {
+    padding: 0px;
+  }
+  .iphoneX {
+    /* height: 400px !important; */
+    /* width: 210px !important; */
+    margin-top: -108%;
+    left: 16% !important;
+  }
+  .mobileboy-overlay {
+    margin-top: -800px;
+  }
+  .iphoneX {
+    height: 435px;
+    width: 269px;
+  }
+  .col-right-img {
+    padding: 20px;
+  }
+  .boy-with-phone {
+    height: 900px;
+  }
+
+  .chart-header {
+    font-size: 30px;
+    line-height: 39px;
+    padding-left: 65px;
+    padding-right: 65px;
+    /* margin-top: 100px; */
+  }
+  .cycle-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+  }
+  .chart-content {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    font-size: 16px;
+    line-height: 126.48%;
+  }
+  .table-data {
+    padding: 19px 0px 19px 0px;
+    font-size: 7px;
+  }
+  .table-1 {
+    width: 125px !important;
+    margin: 10px;
+    height: 252px;
+  }
+  .table-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80px !important;
+    height: 400px !important;
+  }
+  .table-3 {
+    width: 80px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 435px !important;
+  }
+  .table3-header {
+    font-size: 13px;
+    color: white;
+  }
+  .table-3 {
+    border-radius: 3px;
+    background-color: #ff4074;
+  }
+  .cart-table-maindiv {
+    width: 100%;
+  }
+
+  .footer-cycle-img {
+    height: 300px;
+    width: 200px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+
+  .slider-card-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 25px;
+    text-align: center;
+    /* width: 256px;
+     height: 184px; */
+  }
+
+  .slider1-arrowleft {
+    bottom: -20px !important;
+    left: 1% !important;
+  }
+  .slider1-arrowright {
+    bottom: -20px !important;
+    right: 1% !important;
+  }
+
+  .slider2-arrowleft {
+    left: 35% !important;
+  }
+  .slider2-arrowright {
+    right: 35% !important;
+  }
+
+  .cycle-row {
+    height: 900px;
+  }
+
+  .cycle-leftcol {
+    height: 500px;
+  }
+
+  .pink-zig-zag {
+    margin-top: -431px;
+  }
+  .membership-card {
+    margin-top: 36px;
+  }
+
+  .white-bg {
+    height: 1700px;
+  }
+
+  .menu-div {
+    left: 85%;
+  }
+
+  .cycle-club-header {
+    line-height: 30px;
+    font-size: 30px;
+    /* letter-spacing: 0.05em; */
+    /* font-weight: 400; */
+  }
+  .cycle-club-section {
+    margin-top: 50px;
+  }
+  .cycle-club-baseline {
+    /* font-weight: 400; */
+    font-size: 16px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* line-height: 126.48%; */
+  }
+  .card-style {
+    /* width: 120px; */
+    height: auto;
+  }
+  .cycle-header {
+    font-size: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 18px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  #icon {
+    margin-top: 25px;
+  }
+
+  .mobile-boy-img {
+    /* padding-left: 0px;
+    padding-right: 40px; */
+    width: auto;
+    height: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    transform: scaleX(-1);
+    margin-left: -550px;
+  }
+
+  .mobile-boy-div {
+    width: 300px;
+    height: 550px !important;
+    position: absolute;
+    margin-top: -444px;
+    overflow: hidden;
+  }
+
+  .header-text1,
+  .header-text2 {
+    font-size: 40px;
+    letter-spacing: 0.1em;
+  }
+
+  .home-content {
+    font-size: 14px;
+  }
+  .learn-more-btn,
+  .join-now-btn {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .membership-card {
+    padding: 35px 25px 35px 25px;
+  }
+  .member-card-row {
+    top: -13%;
+  }
+
+  .member-main-content {
+    height: 1420px;
+  }
+
+  .col3-imgoverlay {
+    bottom: 3%;
+    left: 16%;
+    height: 147px;
+  }
+  .footer-input {
+    width: 285px;
+  }
+  .cart-table-maindiv {
+    padding: 5px;
+  }
+
+  .pink-zig-zag {
+    margin-top: -385px;
+  }
+
+  .card-text {
+    padding: 2px 25px 65px 25px;
+  }
+
+  .row2-oval {
+    position: absolute;
+  }
+
+  .green-box {
+    margin-top: 0.5rem !important;
+  }
+
+  .col2-bottomtext {
+    margin-top: 0px !important;
+  }
+
+  .col2-imgoverlay {
+    height: 127px;
+  }
+}
